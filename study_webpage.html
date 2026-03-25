@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5, CSS3, JavaScript 학습 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5, CSS3, JavaScript 학습 예제</h1>
+    <p id="message">버튼을 클릭해보세요!</p>
+    <button onclick="changeMessage()">클릭하세요</button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById('message').innerText = 'JavaScript로 텍스트가 변경되었습니다!';
+        }
+    </script>
+</body>
+</html>
